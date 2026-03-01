@@ -9,6 +9,7 @@ API_KEY = os.getenv("API_KEY")
 
 ## CÓDIGO PRINCIPAL
 print("Hola, mundo.")
+print("Hasta luego."
 print(CLAVE)
 print(API_KEY)
 
