@@ -1,15 +1,12 @@
 import os
-#? pip install python-dotenv
 from dotenv import load_dotenv
 load_dotenv()
 
-## VARIABLES DE ENTORNO
-CLAVE = os.getenv("CLAVE")
-API_KEY = os.getenv("API_KEY")
+DB_HOST = os.getenv('DB_HOST')
+DB_PORT = os.getenv('DB_PORT')
+DB_USER = os.getenv('DB_USER')
 
-## CÓDIGO PRINCIPAL
-print("Hola, mundo.")
-print("Hasta luego.")
-print(CLAVE)
-print(API_KEY)
+print(DB_HOST)
+print(DB_PORT)
+print(DB_USER)
 
