@@ -1,14 +1,20 @@
+
+## Librerías.
+    #@ Para cargar variables de entorno.
 import os
-#? pip install python-dotenv
 from dotenv import load_dotenv
+
+    #@ Carga del entorno virtual.
 load_dotenv()
 
-## VARIABLES DE ENTORNO
-CLAVE = os.getenv("CLAVE")
-API_KEY = os.getenv("API_KEY")
+## Configuración de hardware.
+    #@ Velocidad máxima en RPM.
+MAX_SPEED_RPM = os.getenv('MAX_SPEED_RPM')
+    #@ Rango máximo de giro.
+MAX_TURN_RANGE = os.getenv('MAX_TURN_RANGE')
 
-## CÓDIGO PRINCIPAL
-print("Hola, mundo.")
-print(CLAVE)
-print(API_KEY)
+## Muestra de configuración
+print(MAX_SPEED_RPM)
+print(MAX_TURN_RANGE)
 
+## Código post reset
